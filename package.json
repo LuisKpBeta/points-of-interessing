@@ -5,14 +5,16 @@
   "main": "./build/main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"ts-node-dev --respawn --transpileOnly ./src/main/index.ts",
-    "start":"npm build && node ./build/main/index.js",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/main/index.ts",
+    "start": "npm build && node ./build/main/index.js",
     "build": "rimraf dist && tsc"
   },
   "author": "Luis Carlos",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "json": "^9.0.6",
     "mongodb": "^3.5.9"
   },
   "devDependencies": {
