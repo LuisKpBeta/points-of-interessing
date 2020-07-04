@@ -5,7 +5,6 @@
 - List all points
 - List all points by proximity
 
-
 ### Examples
 - 'Lanchonete' (x=27, y=12)
 - 'Posto' (x=31, y=18)
@@ -20,3 +19,20 @@
 > Joalheria
 > Pub
 > Supermercado
+
+### Routes
+
+>METHOD: GET
+>URL: /point
+>RESPONSE: list with all points registered
+
+>METHOD: GET
+>URL: /find-point
+>QUERY PARAMETERS: distance, x, y
+>RESPONSE: list with points in range
+
+>METHOD: POST
+>URL: /point
+>BODY: name, coordinateX, coordinateY
+>RESPONSE: registered point
+
