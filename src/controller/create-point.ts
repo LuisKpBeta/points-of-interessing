@@ -13,7 +13,6 @@ export default class CreateInterestPoint {
         y: coordinateY
       }
       const createdPoint = await this.createPointOfInterest.add({ name, coordenate })
-      console.log(createdPoint)
       response.status(200)
       return response.json({ createdPoint })
     } catch (error) {
