@@ -22,17 +22,14 @@
 
 ### Routes
 
->METHOD: GET <Enter>
->URL: /point <Enter>
->RESPONSE: list with all points registered
+>METHOD|URL: GET | /point
+- RESPONSE: list with all points registered
 
->METHOD: GET <Enter>
->URL: /find-point<Enter>
->QUERY PARAMETERS: distance, x, y<Enter>
->RESPONSE: list with points in range
+>METHOD | URL: GET  /find-point
+- QUERY PARAMETERS: distance, x, y
+- RESPONSE: list with points in range
 
->METHOD: POST<Enter>
->URL: /point<Enter>
->BODY: name, coordinateX, coordinateY<Enter>
->RESPONSE: registered point
+>METHOD | URL: POST | /point
+- BODY: name, coordinateX, coordinateY
+- RESPONSE: registered point
 
