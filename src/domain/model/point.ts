@@ -1,7 +1,7 @@
 export default interface PointOfInterrest{
   id:string
   name:string
-  coodenate:{
+  coordenate:{
     x:number
     y:number
   }
