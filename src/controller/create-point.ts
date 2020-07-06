@@ -5,9 +5,9 @@ export default class CreateInterestPoint {
 
   async handle (request: Request, response: Response): Promise<Response> {
     try {
-      const name:string = request.body.name
-      const coordinateX:number = request.body.coordinateX
-      const coordinateY:number = request.body.coordinateY
+      const { name, coordinateX, coordinateY }:
+      {name:string, coordinateX:number, coordinateY: number} = request.body
+
       const coordenate = {
         x: coordinateX,
         y: coordinateY
